@@ -46,6 +46,7 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+          hover: "hsl(var(--card-hover))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -62,6 +63,16 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        card: "var(--card-shadow)",
+        "card-hover": "var(--card-shadow-hover)",
+      },
+      backgroundImage: {
+        hero: "var(--hero-gradient)",
+      },
+      transitionTimingFunction: {
+        smooth: "var(--transition-smooth)",
       },
       keyframes: {
         "accordion-down": {
