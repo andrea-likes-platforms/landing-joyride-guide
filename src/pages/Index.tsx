@@ -72,24 +72,33 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                asChild
               >
-                <Rocket className="w-5 h-5 mr-2" />
-                Start Your Journey
+                <a href="/what-and-why">
+                  <Rocket className="w-5 h-5 mr-2" />
+                  What And Why
+                </a>
               </Button>
               <Button 
                 size="lg" 
                 variant="secondary"
                 className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                asChild
               >
-                <Star className="w-5 h-5 mr-2" />
-                Explore Tools
+                <a href="/where-to-start">
+                  <Star className="w-5 h-5 mr-2" />
+                  Where To Start
+                </a>
               </Button>
               <Button 
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                asChild
               >
-                <Sparkles className="w-5 h-5 mr-2" />
-                Get Inspired
+                <a href="/starting-and-progressing">
+                  <Sparkles className="w-5 h-5 mr-2" />
+                  Starting And Progressing
+                </a>
               </Button>
             </div>
             
