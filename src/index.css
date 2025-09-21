@@ -6,42 +6,43 @@
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 220 13% 18%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
-    --card-hover: 210 40% 98%;
+    --card-foreground: 222.2 84% 4.9%;
+    --card-hover: 345 82% 97%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 220 13% 18%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 345 82% 52%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 13% 18%;
+    --secondary: 280 87% 65%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 217 91% 60%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 45 93% 58%;
+    --accent-foreground: 222.2 84% 4.9%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 217 91% 60%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 345 82% 52%;
 
     --radius: 0.75rem;
     
-    /* Custom tokens for clean design */
-    --hero-gradient: linear-gradient(135deg, hsl(220 13% 18%), hsl(220 9% 46%));
-    --card-shadow: 0 1px 3px 0 hsl(220 13% 18% / 0.1), 0 1px 2px -1px hsl(220 13% 18% / 0.1);
-    --card-shadow-hover: 0 10px 25px -3px hsl(220 13% 18% / 0.1), 0 4px 6px -4px hsl(220 13% 18% / 0.1);
-    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Fun theme park design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(345 82% 52%) 0%, hsl(280 87% 65%) 50%, hsl(45 93% 58%) 100%);
+    --fun-gradient: linear-gradient(45deg, hsl(345 82% 52%) 0%, hsl(280 87% 65%) 25%, hsl(45 93% 58%) 50%, hsl(142 71% 45%) 75%, hsl(345 82% 52%) 100%);
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --card-shadow-hover: 0 20px 40px -12px hsl(345 82% 52% / 0.25), 0 8px 16px -8px hsl(280 87% 65% / 0.3);
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -61,38 +62,39 @@
   }
 
   .dark {
-    --background: 220 13% 7%;
-    --foreground: 220 14% 96%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 220 13% 9%;
-    --card-foreground: 220 14% 96%;
-    --card-hover: 220 13% 11%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --card-hover: 345 82% 8%;
 
-    --popover: 220 13% 9%;
-    --popover-foreground: 220 14% 96%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 220 14% 96%;
-    --primary-foreground: 220 13% 7%;
+    --primary: 345 82% 60%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 13% 15%;
-    --secondary-foreground: 220 14% 96%;
+    --secondary: 280 87% 70%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 13% 15%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217 91% 60%;
-    --accent-foreground: 220 13% 7%;
+    --accent: 45 93% 65%;
+    --accent-foreground: 222.2 84% 4.9%;
 
     --destructive: 0 62% 50%;
-    --destructive-foreground: 220 14% 96%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 220 13% 15%;
-    --input: 220 13% 15%;
-    --ring: 217 91% 60%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 345 82% 60%;
     
-    --hero-gradient: linear-gradient(135deg, hsl(220 13% 7%), hsl(220 13% 15%));
-    --card-shadow: 0 1px 3px 0 hsl(0 0% 0% / 0.3), 0 1px 2px -1px hsl(0 0% 0% / 0.3);
-    --card-shadow-hover: 0 10px 25px -3px hsl(0 0% 0% / 0.3), 0 4px 6px -4px hsl(0 0% 0% / 0.3);
+    --hero-gradient: linear-gradient(135deg, hsl(345 82% 60%) 0%, hsl(280 87% 70%) 50%, hsl(45 93% 65%) 100%);
+    --fun-gradient: linear-gradient(45deg, hsl(345 82% 60%) 0%, hsl(280 87% 70%) 25%, hsl(45 93% 65%) 50%, hsl(142 71% 50%) 75%, hsl(345 82% 60%) 100%);
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --card-shadow-hover: 0 20px 40px -12px hsl(345 82% 52% / 0.4), 0 8px 16px -8px hsl(280 87% 65% / 0.5);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
