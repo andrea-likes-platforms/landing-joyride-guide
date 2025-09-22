@@ -1,25 +1,186 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Platform Engineering Toolkit - Tools & Best Practices</title>
-    <meta name="description" content="A comprehensive collection of platform engineering tools, patterns, and best practices for building internal developer platforms." />
-    <meta name="author" content="Platform Engineering Toolkit" />
-    <meta name="keywords" content="platform engineering, devops, developer experience, internal platforms, cloud native" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎢 Platform Engineering Toolkit - Tools & Best Practices</title>
+    <meta name="description" content="A comprehensive collection of platform engineering tools, patterns, and best practices for building internal developer platforms.">
+    <meta name="author" content="Platform Engineering Toolkit">
+    <meta name="keywords" content="platform engineering, devops, developer experience, internal platforms, cloud native">
+    
+    <meta property="og:title" content="Platform Engineering Toolkit - Tools & Best Practices">
+    <meta property="og:description" content="A comprehensive collection of platform engineering tools, patterns, and best practices for building internal developer platforms.">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-brand">Platform Toolkit</a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="content.html" class="nav-link">Content</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    <meta property="og:title" content="Platform Engineering Toolkit - Tools & Best Practices" />
-    <meta property="og:description" content="A comprehensive collection of platform engineering tools, patterns, and best practices for building internal developer platforms." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        🎢 Platform Engineering Toolkit
+                    </h1>
+                    <p class="hero-description">
+                        Welcome aboard the most exciting platform engineering adventure! 
+                        Build amazing internal platforms with tools, patterns, and practices that actually work.
+                    </p>
+                    
+                    <!-- Three Action Buttons -->
+                    <div class="hero-buttons">
+                        <a href="what-and-why.html" class="btn btn-primary">
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L22 7L12 12L2 7L12 2Z"/>
+                                <path d="M2 17L12 22L22 17"/>
+                                <path d="M2 12L12 17L22 12"/>
+                            </svg>
+                            What And Why
+                        </a>
+                        <a href="where-to-start.html" class="btn btn-secondary">
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            Where To Start
+                        </a>
+                        <a href="starting-and-progressing.html" class="btn btn-accent">
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11H5a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h4m6-6h4a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-4"/>
+                                <path d="M9 7L5 3L9 7z"/>
+                                <path d="M15 7L19 3L15 7z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                            Starting And Progressing
+                        </a>
+                    </div>
+                    
+                    <div class="hero-divider"></div>
+                </div>
+            </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+            <!-- Navigation Cards Grid -->
+            <div class="cards-grid">
+                <a href="content.html?section=introduction" class="card">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="card-title">Introduction</h3>
+                            <p class="card-description">Learn the fundamentals of platform engineering and how to get started with building internal platforms.</p>
+                        </div>
+                    </div>
+                </a>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                <a href="content.html?section=architecture" class="card">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="card-title">Architecture</h3>
+                            <p class="card-description">Explore platform architecture patterns, design principles, and best practices for scalable systems.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="content.html?section=adoption" class="card">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="card-title">Adoption</h3>
+                            <p class="card-description">Strategies for platform adoption, change management, and building developer engagement.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="content.html?section=tools" class="card">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="card-title">Tools & Automation</h3>
+                            <p class="card-description">Discover tools, frameworks, and automation strategies that power modern platform engineering.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="content.html?section=security" class="card">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="card-title">Security & Compliance</h3>
+                            <p class="card-description">Platform security best practices, compliance frameworks, and governance strategies.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="content.html?section=configuration" class="card">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="card-title">Configuration</h3>
+                            <p class="card-description">Platform configuration management, environment setup, and operational procedures.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p class="footer-text">
+                    Building better platforms together. Start with any section above to begin your journey.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
