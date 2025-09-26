@@ -14,7 +14,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <Link to="/" className="text-xl font-semibold text-primary hover:text-accent transition-colors">
-            Platform Toolkit
+            Platform Engineering Toolkit
           </Link>
           
           <div className="flex items-center space-x-6">
