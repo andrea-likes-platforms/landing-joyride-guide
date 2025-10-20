@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Engineering metrics overview - Platform Engineering Toolkit</title>
+    <meta name="description" content="Guidance in designing adaptive, socio-technical systems using Wardley mapping, Domain Driven Design & Team Topologies.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-brand">Platform Engineering Toolkit</a>
+                <div class="nav-links">
+                    <a href="get-involved.html" class="nav-link">Get Involved</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Article Header -->
+            <div class="article-header">
+                <a href="starting-and-progressing.html" class="back-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5m7-7l-7 7 7 7"/>
+                    </svg>
+                    Back to Starting And Progressing
+                </a>
+                
+                <div class="article-meta">
+                    <span class="badge">Framework</span>
+                    <span class="badge">Article</span>
+                </div>
+                
+                <h1 class="article-title">Platform Engrineering metrics overview</h1>
+                
+                <div class="article-audience">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span>For: Product managers, Platform teams, platform leaders</span>
+                </div>
+            </div>
+
+            <!-- Article Content -->
+            <div class="article-content">
+                <div class="prose">
+                    <h2>Overview</h2>
+                    <p>Many metrics for platform engineering exist. We provide a short overview of well-known metrics frameworks, but will mostly refer to the excelent article by Lothar Schulz who covers all of them in more depth.</p>
+
+                    <h2>Summary</h2>
+                    <p>There are many metrics available to measure developer productivity and effectiveness of platforms. As of writing, there are 5 that stand out, which are compared in the excelent article of Lothar Schulz. We will give the quick rundown of each.</p>
+
+                    <p>First a note on <b>metrics and culture</b>. Metrics can provide an organization with many invaluable insights in where to invest and how to grow as an organization. However, if there is no safety culture installed, we have seen them also being abused. Most metrics can easily be gamified and at that point become useless. This means, that you need to be very aware and careful on how these metrics will be used to make them effective.</p>
+
+                    <h3>DORA</h3>
+                    <p>DORA was the first of these metrics frameworks and has a very specific set of metrics. They are aimed at DevOps teams measuring delivery outcomes. While they can be used by platform teams, they might be even more valuable for stream-aligned teams leveraging the platforms. This means they're interesting both to measure as a platform team, as well as providing easy insights  through the platform towards stream-aligned teams.</p>
+
+                    <h3>SPACE</h3>
+                    <p>
+                        The SPACE Framework is newer, but quite well established by now. It focuses on deliver productivity as well, but has a broader scope. It has 5 domains, but advices to only pick a few to focus on. For each domain, it provides multiple potential metrics to use. This makes it more flexible and can be adjusted for your organization or teams needs. Similar to DORA, it can be valueable for a platform team to measure their own performance. But it's especially valuable to measure the impact of your platform on the stream-aligned teams. As it contains a wider suite of metrics, it will be harder to provide insights into all of them for your platform users.
+                    </p>
+
+                    <h3>DevEx</h3>
+                    <p>
+                        The DevEx framework is the only framework in this list that has a very explicit focus on platform engineering. Developer Experience is at the heart of platform engineering. Therefore, this framework can provide valuable insights into your platform usage and effectiveness as a platform team. However, it is missing elements such as adoption or ROI of your platform. Therefore, it is unlikely to cover all your metric needs.
+                    </p>
+
+                    <h3>DX Core 4 and ESSP</h3>
+                    <p>
+                        Both DX Core 4 and Github Engineering System Success Playbook (ESSP) are relatively new (end of 2024 and early 2025). Both frameworks try to provide a way to combine insights from the other frameworks into a more holistic approach. Also, both have more explicit focus on executives, which is a very valuable addition missing in the others. While both frameworks seem to be based on thorough research, they are releatively new. Therefore, we are hesitant to wholeheartedly recommend them at this point in time.
+                    </p>
+
+                    <h2>Resources</h2>
+                    <p>The first resource is an article with many more details on all five metric frameworks and it includes more links. We list a few of direct links to the three first frameworks as well:</p>
+                    <ul>
+                        <li><a href="https://www.lotharschulz.info/2025/05/04/engineering-metrics-frameworks-dora-devex-space-dx-core-4-essp-comparison/" target="_blank" rel="noopener noreferrer">Engineering Metrics Frameworks: DORA, DevEx, SPACE, DX Core 4, ESSP Comparison</a></li>
+                        <li><a href="https://dora.dev/research/" target="_blank" rel="noopener noreferrer">DORA</a> - Good starting point for generic productivity metrics</li>
+                        <li><a href="https://queue.acm.org/detail.cfm?id=3454124" target="_blank" rel="noopener noreferrer">SPACE</a> - Framework for generic productivity metrics</li>
+                        <li><a href="https://shipyard.build/blog/devex-framework/" target="_blank" rel="noopener noreferrer">DevEx metrics</a> - Metrics more specific to platform engineering</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Article Navigation -->
+            <div class="article-nav">
+                <p class="article-nav-text">Continue exploring starting and progressing</p>
+                <div class="article-nav-buttons">
+                    <a href="platform-enablement-services-canvas.html" class="btn-outline">← Platform Enablement Services Canvas</a>
+                    <a href="pe-kickoff-change-approach.html" class="btn-outline">Kickoff change approach →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
